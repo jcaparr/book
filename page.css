@@ -1,0 +1,560 @@
+:root {
+	--font-: 'Satisfy', cursive;
+	--font-titulo: 'Sacramento', cursive;
+	--font-text: 'Bubblegum Sans', cursive;
+	--font-reseña: 'Gloria Hallelujah', cursive;
+	--color-text: #000;
+	--color-textsec: #600000f2;
+	--colorbackground: #d5e9e1 ;
+	--colorbackground-yllw: #CFC292;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+html {
+	box-sizing: border-box;
+	font-family: var(--font-text);
+	color: var(--color-text);
+	scroll-behavior: smooth;
+}
+
+/*Tipografia*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+.sobremi {
+	margin: 0;
+}
+
+h1{
+	font-family: var(--font-titulo);
+	line-height: 0.8;
+	font-size: 4rem;
+	text-shadow: 5px 5px 5px #333;
+}
+
+h2{
+	font-family: var(--font-);
+	line-height: 0.8;
+	font-size: 1rem;
+}
+
+h3{
+	font-family: var(--font-reseña);
+	line-height: 0.8;
+	font-size: 1.5rem;
+}
+
+p{
+	line-height: 1.5;
+	font-size: 1.2rem;
+
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: linear-gradient(to bottom, var(--colorbackground-yllw), #594e27) ;
+
+}
+
+
+/*nav*/
+
+.nav__responsive-ul{
+	display: none;
+}
+
+
+.header-nav{
+	padding: 0;
+}
+
+
+.nav{
+	background-color: var(--colorbackground);
+}
+
+.nav-ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 1.3rem;
+	align-items: center;
+	margin: 0 0 .1px 0;
+	padding: 0;
+}
+
+
+
+.li-nav{
+	height: 70px;
+	width: 110px;
+}
+
+.li-nav:hover,
+.li-nav:focus{
+		background-color: #c6d5d0;
+		box-shadow: .3em .3em 1em rgba(0, 0, 0, 0.4);
+		border-radius: 50px;
+}
+
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	height: 100%;
+	padding-top: 20px;
+	margin-left: 1px;
+}
+
+#inicio-icono{
+	padding-left: 10px;
+}
+
+
+nav a:hover,
+nav a:focus{
+	text-decoration: underline;
+
+}
+
+.li-nav i{
+	color: black;
+	padding-left: 10px;
+}
+
+header{
+	padding: .5em .2em 1em 0;
+}
+
+
+.nav__responsive-button-container {
+	position: absolute;
+	width: 90%;
+	font-size: 25px;
+	background-color: var(--colorbackground);
+	margin-top: -50px;
+	z-index: 100;
+}
+
+.nav__responsive-button {
+	padding: 6px 20px;
+	text-align: right;
+	width: 100%;
+}
+
+
+
+/*estilos*/
+
+/*sobremi seccion*/
+.sobremi{
+	background: rgba(0, 0, 0, .1) url("https://img.freepik.com/foto-gratis/fondo-paginas-libro-blanco_469558-1821.jpg?w=2000");
+	background-blend-mode: multiply;
+	background-size: 100em;
+	padding: 3em;
+}
+
+.sobremiparrafo{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+
+
+.smp-2{
+	margin: 0 0 0 5em;
+}
+
+
+
+
+
+/*reseña seccion*/
+
+.reseñaimg{
+	width: 350px;
+	height: 350px;
+	margin: 0 .5em;
+	filter: brightness(90%);
+}
+
+
+.reseña{
+	padding-top: 10em;
+	background: var(--colorbackground);
+}
+
+
+.reseña-tituloseccion{
+	text-align: center;
+	
+}
+
+
+.reseña-intro{
+	text-align: center;
+
+}
+
+
+.contenedor-reseñas{
+	display: flex;
+	padding: 8em .3em 0;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+
+.reseña-libros{
+	margin: 0 6em 6em;
+	width: 30em;
+	border-radius: 12px;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+	background-color: var(--colorbackground-yllw);
+}
+
+
+.reseña-libro-titulo{
+	margin: 1em 0;
+	color: var(--color-textsec);
+	text-shadow: 1.8px 1.8px 1.8px #555;
+	
+}
+
+
+
+.reseña-p{
+	color: transparent;
+	cursor: pointer;
+	margin: 0 1.5em;
+	transition: 2s;
+	text-align: left;
+}
+
+
+.reseña-p:hover{
+	color: var(--color-text);
+}
+
+.reseña-p::first-letter{
+	font-size: 7em;
+	float: left;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+
+
+
+.reseñadivp{
+	background: var(--colorbackground-yllw);
+	transition: height 2s;
+	height: 100px;
+	
+}
+
+.reseñadivp:hover{
+	height: 280px;
+
+}
+
+
+
+i,
+.reseña-libros > h4{
+	color: var(--color-textsec);
+}
+
+
+.contenedor-leido{
+	padding: 1em 0 .5em 1.5em;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+
+#iconlike,
+#icondislike{
+	cursor: pointer;
+	color: var(--color-text);
+}
+
+#iconlike:hover{
+	color: #41C413;
+}
+
+
+#icondislike:hover{
+	color: #D80704;
+}
+
+
+
+
+/*contacto seccion*/
+
+
+
+.comunicar{
+	margin-top: 0;
+	background: url(https://images6.alphacoders.com/975/975701.jpg);
+
+}
+
+.comunicar-h1{
+	padding-top: 50px;
+	text-align: center;
+	text-shadow: 5px 5px 5px #555;
+}
+
+.comunicar-texto p{
+	text-align: center;
+	text-shadow: 10px 10px 10px black;
+}
+
+
+.contenedor-form{
+	background: url(https://i.pinimg.com/originals/2a/7f/7f/2a7f7fe984b1720ad76aca7b3fd96005.png);
+	background-repeat:no-repeat;
+	width: 100vh;
+	height: 650px;
+	margin-left: 600px;
+	
+
+}
+
+.comunicar-form{
+	margin-top: 5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	position: relative;
+	top: 120px;
+	left: 80px;
+
+}
+
+.form-input{
+	width: 270px;
+	font-size: 1.3rem;
+	font-family: var(--font-text);
+	padding: 7px;
+	margin: 10px 0 0;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #966b09;
+	color: #222;
+}
+
+
+.instagram-img{
+	width: 80px;
+	height:80px;
+	margin-top: 150px;
+	margin-left: 400px;
+}
+
+
+textarea{
+	min-height: 140px;
+	resize: none;
+}
+
+
+
+.form-input:focus{
+	outline: none;
+	border-bottom: 2px solid #5a4105;
+}
+
+input::placeholder,
+textarea::placeholder{
+	color: #555;
+	margin-bottom: 0;
+}
+
+/*boton*/
+
+.form input[type="submit"]{
+	border:none;
+	background: #b4800b;
+	color: #222;
+	width: 50%;
+	cursor: pointer;
+}
+
+.form input[type="submit"]:hover{
+	background: linear-gradient(to bottom, #b4800b, #966b09 );
+}
+
+
+.form input[type="submit"]:focus{
+	background: linear-gradient(to bottom, #b4800b, #966b09 );
+}
+
+.form input[type="submit"]:active{
+	background: linear-gradient(to bottom,#966b09, #b4800b);
+}
+
+
+
+@media only screen and (max-width: 1120px){
+	
+	.nav-ul{
+		display: none;
+	}
+
+	.nav__responsive-ul{
+		display: block;
+		position: absolute;
+		width: 100%;
+		margin-top: 30px;
+		padding-top: 20px;
+		height: 30px;
+		list-style: none;
+	}
+
+	.nav{
+		height: 47px;
+		width: 100%;
+		background-color: var(--colorbackground);
+		
+	}
+
+	.nav__li-container{
+		position: relative;
+		top: -1000px;
+		height: calc(70vh - 200px);
+		background-color: var(--colorbackground);
+		transition: all 1s;
+		z-index: 1;
+		width: 80%;
+		padding-top: 27px;
+	}
+
+
+	.nav__responsive-li{
+		width: 100%;
+		padding: 9px 20px;
+
+
+	}
+
+	.nav__responsive-li i{
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		width: 30px;
+		color: black;
+	}
+	.nav__responsive-li a{
+		color: black;
+		text-decoration: none;
+	}
+
+	.nav__responsive-ul:hover > .nav__li-container{
+		top: -48px;
+	}
+
+
+
+
+
+
+	.instagram-img{
+		
+		width: 5vh;
+		height: 5vh;
+		
+	}
+
+	.reseñadivp:hover{
+	height: 350px;
+	}
+
+	.comunicar-texto p{
+		text-align: center;
+		margin: auto;
+		padding: 0 5px;
+	}
+	.comunicar-h1{
+		text-align: center;
+		margin: auto;
+	}
+
+
+	.contenedor-form{
+		margin-left: 200px;
+
+	}
+
+}
+
+
+@media only screen and (max-width: 670px){
+
+
+
+	.sobremi{
+		padding: 0;
+
+	}
+
+	.sobremiparrafo{
+		flex-wrap: wrap;
+		margin: 0 20px;
+}
+
+	.smp-2{
+		margin: 15px 0;
+	}
+
+	.tituloseccion{
+		text-align: center;
+		margin: 50px 0;
+	}
+
+	.contenedor-form{
+		margin-left: -20px;
+
+	}
+
+	.comunicar{
+		color: white;
+	}
+
+	.instagram-img{
+		margin-top: 180px;
+		margin-left: 360px;
+	}
+}
+
+
+
